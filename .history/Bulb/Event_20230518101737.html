@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="myTime"></p>
+    <p id="onmouse"></p>
+    <p id="load"></p>
+    
+    <button onclick="document.getElementById (demo).innerHTML=date()"> the time is?</button><br>
+    <button onmouseout="document.getElementById('onmouse').innerHTML=Date()">time is now what</button> <br>
+    <button onmouseover="document.getElementById('onmouse').innerHTML=Date()">time now</button> <br>
+    <button onload="document.getElementById('load').innerHTML=Date()">time is loading</button> <br>
+
+    <p id="demo"></p>
+    <button onclick="this.innerHTML=Date()">the time is?</button><br>
+    <button onclick="Document.getElementById(demo).innerHTML=Date()">the time is?</button><br>
+    <button onclick="DisplayDate()">the time is now?</button><br>
+    <audio src="audio.mp3" control muted>sorry your browser does not support embedding audio.</audio>
+
+    <p id="demo2"></p>
+    <button onclick="document.getElementById('demo').innerHTML=Date()">time is now</button>
+
+    <div id="sample" style="width: 200px; height: 200px; background-color: gold; border: 5px solid black;"></div>
+    <button onclick="show()">show</button>
+    <button onclick="hide">hide</button>
+
+    <script>
+        function show(){document.getElementById("sample").innerHTML=("show").style.display = "block"};
+        function hide(){document.getElementById("sample").innerHTML=("hide").style.display = "none"};
+    </script>
+     <img src="dembele/example-1.jpg" style="max-width: 100%; height:auto;" id="sample" class="1" alt=""> </br>
+     <button onclick="changeImage();"> change image </button>
+
+     <script type="text/javascript">
+        function changeImage() {document.getElementById("sample").src= "dembele/example-1.jpg";}
+
+     </script>
+    
+    
+   
+ 
+  
+</body>
+</html>

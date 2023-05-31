@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo7"></p>
+    <p id="demo8"></p>
+    <p id="switch"></p>
+    <p id="switchdemo"></p>
+    <script>
+        const Time = new Date().getHours();
+        let Greeting;
+        if(Time < 10) {Greeting="goodMorning";}
+         else if(Time < 20) {Greeting="goodAfternoon";}
+          else{Greeting="goodEvening";}
+          console.log(Greeting);
+          document.getElementById("demo7").innerHTML=Greeting
+
+
+          const Hour = new Date().getHours();
+          let Greetings;
+          if(Hour < 18) {Greetings="Good Day";}
+          else{Greetings="Good Afternoon";} 
+          console.log(Greetings);
+          document.getElementById("demo8").innerHTML=Greetings
+
+          let Day;
+          switch(NewDate().getDay()) {
+            case 0: Day="sunday";  '<br>';
+            case 1: Day="monday";   '<br>'; 
+            case 2: Day="tuesday";   '<br>'; 
+            case 3: Day="wednesday";  '<br>'; 
+            case 4: Day="thursday";  '<br>' ;
+            case 5: Day="friday";  '<br>' ;
+            case 6: Day="saturday";   '<br>';
+            console.log(Day);
+          }
+          document.getElementById("switch").innerHTML="Today is" + Day;
+
+
+          let Month;
+          switch(Month) { 
+            case 1: month="january"; break;
+            case 2: Month="february"; break;
+            case 3: Month="march"; break;
+            case 4: Month="april";
+          }
+
+    </script>
+    
+   
+    
+</body>
+</html>
