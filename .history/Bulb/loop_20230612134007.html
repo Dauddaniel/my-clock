@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="loopin"></p>
+    <p id="index"></p>
+    <p id="html"></p>
+    <p id="demo10"></p>
+    <p id="demo11"></p>
+    <p id="demo12"></p>
+    <p id="demo13"></p>
+    <p id="demo14"></p>
+    <script>
+        // Text+= cars[0] + "break";
+        // Text+= cars[1] + "break";
+        // Text+= cars[2] + "break";
+        // Text+= cars[3] + "break";
+        // Text+= cars[4] + "break";
+        // Text+= cars[5] + "break";
+
+        // const cars = ["volva", "toyota", "vs", "prado", "audi", "bmw", "benson", "ford"]
+        // let Text= "";
+        // for (let i = 0; < cars.length; i++) {
+            // Text += cars[i] + "break";
+        // }
+
+        // console.log(cars)
+        // document.getElementById("demo").innerHTML=Text;
+
+        // const person = {firstName: "Daudy", middleName: "Jalila", lastName: "Daniel", age: 21,  Address: "kakuma", country: "kenya", status: "single";}
+        // let text = "";
+        // for(let x in person){text+=person[x]
+        // }
+
+        console.log(person)
+        document.getElementById("loopin").innerHTML=person;
+
+        var cities = ["mumbai", "abuja", "new york"];
+        var html = "";
+
+        for(var i = 0 < cities.length; i++) {
+            html += "<p>" + cities[i] + "</p>";
+
+            console.log(cities)
+            document.getElementById("index").innerHTML=html;
+        }
+
+        const Number=[40, 45, 50, 55, 60];
+        let Text = "";
+
+        for(let x in Number) {
+            Text+=Number[x];
+        }
+
+        console.log(Number)
+        document.getElementById("html").innerHTML = Text;
+
+        let lang = "javascript"; "c++";
+        let index = "";
+        for(let x of lang) {
+            Text+=x;
+        }
+        console.log(lang)
+        document.getElementById("demo10").innerHTML = index;
+
+        const cars = ["volvo", "toyota", "bmw", "prado"];
+        let main = ""; 
+        for(let x of cars) {
+            Text+=cars
+        }
+        console.log(cars);
+        document.getElementById("demo11").innerHTML = main;
+
+        const fruits = ["apple", "mango", "orange", "banana"];
+        // let len = fruits.length;
+        let i = 0;
+        let html = "";
+        
+        while(fruits[i] ) {html+=fruits[i] + "break" + i++}
+        console.log(fruits);
+        document.getElementById("demo12").innerHTML = html
+
+        let text = "";
+        let e = 0;
+
+        do{
+            text+= " the number is " + e;
+            e++;
+        }
+        while(e < 100);
+        console.log(text);
+        document.getElementById("demo13").innerHTML = text;
+
+        // var menu = "";
+        // for(var i = 0; i < 50; i++) {
+        // if(i===10) {
+            // break;
+        // }
+        // menu+= "<li>Number " + i + "</li>"
+        // }
+        // console.log(menu);
+        // document.getElementById("demo14").innerHTML = menu;
+
+        var menu = "";
+        for(var i = 0; i < 50; i++) {
+        if(i===10) {
+            continue;
+        }
+        menu+= "<li>Number " + i + "</li>"
+        }
+        console.log(menu);
+        document.getElementById("demo14").innerHTML = menu;
+
+        var myTimeout = setTimeout(function(){
+            console.log("hello world!");
+        }, 3000);
+        console.log(myTimeout);
+
+        const students = ["Daudy ", "Debra ", "Cuboy ", "Kefaya "];
+        const teachers = ["Jalila ", "Mawiya ", "Sarah ", "Daniel "];
+        const all = teachers.concat(students);
+
+        let text5 = "";
+        for(const y of all) {
+            text5+= y + "<break>";
+        }
+        console.log(all);
+
+        const players = ["drogba ", "messi ", "mount ", "suarez "];
+        const managers = ["xavier ", "klopp ", "pep ", "thomas "];
+        const both = players.concat(managers);
+
+        let van = "";
+        for(const x of both) {
+            van+= x + "<break>"
+        }
+        console.log(both)
+        
+        const food = new Map([
+            ["fish ", 1000 ],
+            ["chicken ferry ", 1500 ],
+            ["ugali ", 200 ],
+            ["chapati ", 250 ],
+         ])
+         let text10 = "";
+         for(const b of food) {
+            text10+= b + "<break>";
+         }
+         console.log(food)
+
+         const vegetables = new Map([
+            ["an apple", 500 ],
+            ["mango", 200],
+            ["cabbage", 700],
+            ["spinach", 300],
+
+         ])
+         let text11 = "";
+         for(const x of vegetables.entries()) {
+            text11+= x + "<break>"
+         } 
+        //  console.log(vegetables)
+        //  console.log(vegetables.get("spinach"))
+         console.log(text11)
+
+         const vegetables1 = new Map([
+            ["an apple", 500 ],
+            ["mango", 200],
+            ["cabbage", 700],
+            ["spinach", 300]
+
+         ])
+         let text12 = "";
+         for(const x of vegetables1.delete("cabbage")) {
+            text12+= x + "<break>"
+         } 
+         console.log(text12)
+        //  console.log(vegetables.get("spinach"))
+        //  console.log(text12)
+
+        const vegetables2 = new Map([
+            ["an apple", 500 ],
+            ["mango", 200],
+            ["cabbage", 700],
+            ["spinach", 300]
+
+         ])
+         let text13 = "";
+         vegetables2.delete('mango')
+          
+         console.log(vegetables2.has('mango'))
+
+         const vegetables4 = new Map([
+            ["onion", 1000],
+            ["spinach", 300],
+            ["cabbage", 450]
+         ])
+         let vina = "",
+         for (const y of vegetables4.entries()) {
+            vina+= y + ""
+         }
+         console.log(vegetables4.get("onion"))
+
+         let text2 = "visit wa3school!"
+         let b = text2.search("wa3school!")
+         console.log(b)
+
+         function myFunction(){
+            let text3 = "document of html"
+            let x=text3.replace ("github codding")
+         }
+         console.log(x)
+
+
+//   let myName= () =>{
+            // console.log("Debra", "Martino", "Jalila")
+        //  }
+        //  console.log(myName)
+
+         let myName= ()=>{
+            console.log("Debra", "Martino", "Jalila")
+         }
+         myName()
+
+         let number= (num) => {
+            return num * num
+         }
+         console.log(number(5))
+
+         let number1 = (b) => {
+            return b + b
+         }
+         console.log(number1(20))
+
+         let number2 = (d) => {
+            return d - d
+         }
+         console.log(number2(10))
+
+         let number3 = (c) => {
+            return c / c
+         }
+         console.log(number3(8))
+
+         let fullName = (fName, mName, lName) =>{
+            let result = fName + " " + mName+ " " + lName 
+            return result  
+         }
+         console.log(fullName("Daudy", "Kuol", "Renato", "Achut"))
+
+         let fullName1 = (fName, mName, lName) =>{
+            let result = fName + " " + mName+ " " + lName 
+            return result  
+         }
+        console.log(result("Daudy", "Kuol", "Renato", "Achut"))
+
+        let number4 = (f) => {
+         return f * j
+        }
+         
+
+
+       
+    
+ 
+
+
+    </script>
+</body>
+</html>
